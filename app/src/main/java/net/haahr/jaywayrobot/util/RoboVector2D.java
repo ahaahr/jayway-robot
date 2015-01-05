@@ -6,6 +6,12 @@ package net.haahr.jaywayrobot.util;
  */
 public class RoboVector2D {
 
-    
+    public int x;
+    public int y;
+
+    public RoboVector2D(int x, int y){
+        this.x = x;
+        this.y = y;
+    }
 
 }

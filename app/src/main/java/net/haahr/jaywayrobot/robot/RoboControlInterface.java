@@ -1,6 +1,7 @@
 package net.haahr.jaywayrobot.robot;
 
 import net.haahr.jaywayrobot.mvc.RoboModel;
+import net.haahr.jaywayrobot.util.RoboPoint;
 
 /**
  * Created by anders.haahr on 05/01/15.
@@ -15,6 +16,6 @@ public interface RoboControlInterface {
      * @param model The RoboModel object containing the data necessary for the robot to start
      * @throws IllegalArgumentException If the startPosition is out of bounds with sizeX or sizeY of the grid
      */
-    void start(RoboModel model) throws IllegalArgumentException;
+    RoboPoint start(RoboModel model) throws IllegalArgumentException;
 
 }
