@@ -1,7 +1,7 @@
-package com.example.andershaahr.jaywayrobot.robot;
+package net.haahr.jaywayrobot.robot;
 
-import com.example.andershaahr.jaywayrobot.util.RoboPoint;
-import com.example.andershaahr.jaywayrobot.util.RoboVector2D;
+import net.haahr.jaywayrobot.util.RoboPoint;
+import net.haahr.jaywayrobot.util.RoboVector2D;
 
 import java.util.ArrayList;
 

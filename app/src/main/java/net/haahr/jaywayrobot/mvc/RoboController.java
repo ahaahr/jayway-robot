@@ -1,10 +1,10 @@
-package com.example.andershaahr.jaywayrobot.mvc;
+package net.haahr.jaywayrobot.mvc;
 
 import android.app.Activity;
 import android.view.View;
 
-import com.example.andershaahr.jaywayrobot.R;
-import com.example.andershaahr.jaywayrobot.robot.RoboControlInterface;
+import net.haahr.jaywayrobot.R;
+import net.haahr.jaywayrobot.robot.RoboControlInterface;
 
 import java.util.ArrayList;
 

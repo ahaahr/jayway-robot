@@ -1,4 +1,4 @@
-package com.example.andershaahr.jaywayrobot.util;
+package net.haahr.jaywayrobot.util;
 
 /**
  * Created by anders.haahr on 05/01/15.

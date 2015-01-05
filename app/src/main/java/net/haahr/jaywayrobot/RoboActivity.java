@@ -1,11 +1,11 @@
-package com.example.andershaahr.jaywayrobot;
+package net.haahr.jaywayrobot;
 
 import android.app.ActionBar;
 import android.app.Activity;
 import android.os.Bundle;
 
-import com.example.andershaahr.jaywayrobot.mvc.RoboController;
-import com.example.andershaahr.jaywayrobot.robot.RoboState;
+import net.haahr.jaywayrobot.mvc.RoboController;
+import net.haahr.jaywayrobot.robot.RoboState;
 
 
 public class RoboActivity extends Activity {

@@ -1,4 +1,4 @@
-package com.example.andershaahr.jaywayrobot.util;
+package net.haahr.jaywayrobot.util;
 
 import android.graphics.Point;
 

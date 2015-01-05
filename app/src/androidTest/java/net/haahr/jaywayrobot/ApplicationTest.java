@@ -1,4 +1,4 @@
-package com.example.andershaahr.jaywayrobot;
+package net.haahr.jaywayrobot;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;
