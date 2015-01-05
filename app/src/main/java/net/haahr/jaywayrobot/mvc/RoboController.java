@@ -21,15 +21,16 @@ public class RoboController {
      */
     private RoboControlInterface roboControlInterface;
 
+
     /**
-     * The list of instructions. The list has inner type String, but only the values 'F', 'L' and 'R' are valid
+     * The model in the MVC pattern. Holds the data to be used to start the robot.
      */
-    private ArrayList<String> instructions;
+    private RoboModel model;
 
 
     public RoboController(RoboControlInterface roboInterface){
         this.roboControlInterface = roboInterface;
-        this.instructions = new ArrayList<>();
+        this.model = new RoboModel();
     }
 
 
@@ -55,7 +56,7 @@ public class RoboController {
 
         @Override
         public void onClick(View v) {
-            instructions.add("L");
+            model.addInstruction("L");
         }
 
     };

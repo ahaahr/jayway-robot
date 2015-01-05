@@ -1,9 +1,6 @@
 package net.haahr.jaywayrobot.robot;
 
-import net.haahr.jaywayrobot.util.RoboPoint;
-import net.haahr.jaywayrobot.util.RoboVector2D;
-
-import java.util.ArrayList;
+import net.haahr.jaywayrobot.mvc.RoboModel;
 
 /**
  * Created by anders.haahr on 05/01/15.
@@ -13,7 +10,7 @@ public class RoboState implements RoboControlInterface {
 
 
     @Override
-    public void start(RoboPoint startPosition, RoboVector2D startDirection, int sizeX, int sizeY, ArrayList<String> instructions) throws IllegalArgumentException {
+    public void start(RoboModel model) throws IllegalArgumentException {
 
     }
 }
