@@ -1,4 +1,4 @@
-package com.example.andershaahr.jaywayrobot;
+package com.example.andershaahr.jaywayrobot.util;
 
 import android.graphics.Point;
 
@@ -6,7 +6,7 @@ import android.graphics.Point;
  * Created by anders.haahr on 05/01/15.
  * A coordinate system for the robot to nivigate in
  */
-public class RoboCoordinate extends Point {
+public class RoboPoint extends Point {
 
 
 

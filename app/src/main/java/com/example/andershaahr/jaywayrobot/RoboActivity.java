@@ -4,6 +4,9 @@ import android.app.ActionBar;
 import android.app.Activity;
 import android.os.Bundle;
 
+import com.example.andershaahr.jaywayrobot.mvc.RoboController;
+import com.example.andershaahr.jaywayrobot.robot.RoboState;
+
 
 public class RoboActivity extends Activity {
 
@@ -17,6 +20,11 @@ public class RoboActivity extends Activity {
         if(actionBar != null){
             actionBar.hide();
         }
+
+        RoboState state = new RoboState();
+
+        RoboController controller = new RoboController(state);
+        controller.setListeners(this);
 
     }
 
