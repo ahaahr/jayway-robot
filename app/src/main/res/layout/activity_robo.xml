@@ -105,7 +105,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
-                android:text="FORWARD"/>
+                android:text="@string/f"/>
 
 
             <RelativeLayout
@@ -123,13 +123,13 @@
                         android:id="@+id/instruction_left"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="LEFT"/>
+                        android:text="@string/l"/>
 
                     <Button
                         android:id="@+id/instruction_right"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="RIGHT"/>
+                        android:text="@string/r"/>
 
                 </LinearLayout>
 
