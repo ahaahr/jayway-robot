@@ -1,5 +1,19 @@
 <resources>
     <string name="app_name">JaywayRobot</string>
+    <string name="max_x">Max x</string>
+    <string name="max_y">Max y</string>
+
+    <string name="start_x">Start x</string>
+    <string name="start_y">Start y</string>
+
+    <string name="grid_size"><u>Grid size</u></string>
+    <string name="starting_location"><u>Starting location</u></string>
+    <string name="starting_direction"><u>Starting direction</u></string>
+
+    <string name="f">F</string>
+    <string name="l">L</string>
+    <string name="r">R</string>
 
     <string name="start">Start</string>
+    <string name="clear">Clear</string>
 </resources>

@@ -1,18 +1,223 @@
-<RelativeLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context=".RoboActivity">
 
-    <Button
-        android:id="@+id/start_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/start"/>
 
-</RelativeLayout>
+    <!--INPUT-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7">
+
+
+        <!--GRID INPUT-->
+        <LinearLayout
+            android:id="@+id/grid_size_input_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="20dp">
+
+            <EditText
+                android:id="@+id/grid_max_x"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:ellipsize="start"
+                android:gravity="center_horizontal"
+                android:inputType="number"
+                android:hint="@string/max_x"/>
+
+            <EditText
+                android:id="@+id/grid_max_y"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:ellipsize="start"
+                android:gravity="center_horizontal"
+                android:inputType="number"
+                android:hint="@string/max_y"/>
+
+        </LinearLayout>
+
+
+        <!--LOCATION INPUT-->
+        <LinearLayout
+            android:id="@+id/starting_location_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_below="@+id/grid_size_input_container">
+
+            <EditText
+                android:id="@+id/start_x"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:ellipsize="start"
+                android:gravity="center_horizontal"
+                android:inputType="number"
+                android:hint="@string/start_x"/>
+
+            <EditText
+                android:id="@+id/start_y"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:ellipsize="start"
+                android:gravity="center_horizontal"
+                android:inputType="number"
+                android:hint="@string/start_y"/>
+
+        </LinearLayout>
+
+
+        <!--DIRECTION INPUT-->
+        <Spinner
+            android:id="@+id/direction_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/starting_location_container"
+            android:ellipsize="start"
+            android:gravity="center_horizontal"
+            android:hint="@string/start_y"
+            android:layout_centerHorizontal="true"/>
+
+
+        <!--INSTRUCTION BUTTONS-->
+        <RelativeLayout
+            android:id="@+id/instructions_buttons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/direction_spinner"
+            android:layout_marginBottom="20dp">
+
+            <Button
+                android:id="@+id/forward_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="FORWARD"/>
+
+
+            <RelativeLayout
+                android:id="@+id/instruction_forward"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/forward_button">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true">
+
+                    <Button
+                        android:id="@+id/instruction_left"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="LEFT"/>
+
+                    <Button
+                        android:id="@+id/instruction_right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RIGHT"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+        
+        
+        <TextView
+            android:id="@+id/instructions_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/instructions_buttons"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:textSize="15sp"
+            android:background="@drawable/border_back"/>
+
+
+        <View
+            android:id="@+id/instructions_separator"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:layout_below="@id/instructions_view"
+            android:background="@android:color/darker_gray"/>
+
+
+        <!--START AND CLEAR BUTTONS-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/instructions_separator">
+
+            <Button
+                android:id="@+id/start_button"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="@string/start"/>
+
+            <Button
+                android:id="@+id/clear_button"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="@string/clear"/>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+
+
+    <!--RESULT-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="0.2">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="20dp"
+            android:background="@android:color/darker_gray"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:background="@drawable/border_back">
+
+            <TextView
+                android:id="@+id/result_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="30sp"/>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

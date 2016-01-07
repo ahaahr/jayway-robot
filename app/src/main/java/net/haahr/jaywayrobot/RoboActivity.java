@@ -23,8 +23,9 @@ public class RoboActivity extends Activity {
 
         RoboState state = new RoboState();
 
-        RoboController controller = new RoboController(state);
-        controller.setListeners(this);
+        RoboController controller = new RoboController(state, this);
+        controller.setListeners();
+        controller.loadUIElements();
 
     }
 

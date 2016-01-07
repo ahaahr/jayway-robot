@@ -45,6 +45,14 @@ public class RoboModel {
 
 
     /**
+     * Clears the instruction list
+     */
+    public void clearInstructions(){
+        this.instructions.clear();
+    }
+
+
+    /**
      * @param startPosition The starting position for the robot in the grid
      */
     public void setStartPosition(RoboPoint startPosition){

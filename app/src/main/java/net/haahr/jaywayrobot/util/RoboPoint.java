@@ -37,4 +37,8 @@ public class RoboPoint {
         }
     }
 
+    @Override
+    public String toString() {
+        return x + ", " + y;
+    }
 }
